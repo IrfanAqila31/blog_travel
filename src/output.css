@@ -874,11 +874,6 @@ video {
     font-size: 1.125rem;
     line-height: 1.75rem;
   }
-
-  .md\:text-red-200 {
-    --tw-text-opacity: 1;
-    color: rgb(254 202 202 / var(--tw-text-opacity, 1));
-  }
 }
 
 @media (min-width: 1024px) {
