@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#home {
+  background-image: url("pantai.png");
+  background-size: cover; /* menyesuaikan ukuran agar menutupi seluruh area */
+  background-repeat: no-repeat; /* mencegah gambar diulang */
+  background-position: center; /* memusatkan gambar */
+  height: 100vh;
+}
