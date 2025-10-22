@@ -8,25 +8,109 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
+    <!-- navbar start -->
+    <!-- bg=transparent agar bg nya tranparan -->
+    <!-- top-0 dan left-0 agar nempel ke atas dan samping kiri 
+       items center agar rata tengah secara vertikal-->
+    <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
+      <div class="container mx-auto lg:px-5">
+        <!-- justify between agar mepet kiri dan kanan -->
+        <!-- mengatur hamburger menu secara absolute agar menempel ke containernya agar terkunci ke halaman dibawah ini menggunakan ralative -->
+        <div class="flex items-center justify-between relative">
+          <!-- ini elemen kiri -->
+          <div class="px-5 lg:pl-14">
+            <a href="#home" class="font-bold text-lg text-cyan-800 block py-6 lg:text-2xl"
+              >kellzTravel</a
+            >
+          </div>
+          <!-- ini elemen kiri -->
+          <!-- ini elemen kanan -->
+          <div class="flex items-center px-5">
+            <button
+              id="hamburger"
+              name="hamburger"
+              type="button"
+              class="block absolute right-5 lg:hidden"
+            >
+              <span
+                class="hamburger-line transition duration-300 ease-in-out origin-top-left"
+              ></span>
+              <span class="hamburger-line transition duration-300 ease-in-out"></span>
+              <span
+                class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"
+              ></span>
+            </button>
+            <nav
+              id="nav-menu"
+              class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[200px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none"
+            >
+              <ul class="block lg:flex">
+                <!-- group = ketika a di klik, kita bisa ubah prilaku list nya -->
+                <li class="group">
+                  <a
+                    href="#home"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-cyan-600"
+                    >Home</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#about"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-cyan-600"
+                    >Destinasi</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#portofolio"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-cyan-600"
+                    >Tentang</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#clients"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-cyan-600"
+                    >Testimoni</a
+                  >
+                </li>
+
+                <li class="group">
+                  <a
+                    href="#contact"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-cyan-600"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <!-- ini elemen kanan -->
+        </div>
+      </div>
+    </header>
+    <!-- navbar end -->
     <!-- homepage start -->
     <section id="home" class="pt-36 flex items-center">
-      <div class="container mx-auto">
+      <div class="container lg:mx-auto">
         <div class="flex flex-wrap items-center justify-center">
           <div class="w-full px-5 self-center lg:px-10 bg-slate-5">
             <h1
-              class="font-bold text-4xl lg:text-5xl md:text-5xl mb-5 text-sky-50 lg:w-1/2 drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)]"
+              class="lg:pl-10 font-bold text-4xl lg:text-5xl md:text-5xl mb-5 text-sky-50 lg:w-1/2 drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)]"
             >
               Temukan Destinasi Wisata Terbaik di Lombok
             </h1>
-            <p class="text-sky-50 lg:w-1/2 drop-shadow-[0_2px_4px_rgba(0,0,0,0.9)]">
+            <p class="lg:pl-10 text-cyan-50 lg:w-1/2 drop-shadow-[0_2px_4px_rgba(0,0,0,0.9)]">
               Temukan keindahan Pulau Lombok — surga tersembunyi dengan pantai perawan, air terjun
               megah, dan budaya yang memesona.
             </p>
-            <a
-              href="#"
-              class="inline-block font-semibold mb-10 bg-cyan-600 px-5 py-3 rounded-full mt-5 text-white hover:bg-cyan-400 transition duration-500 shadow-lg shadow-slate-400"
-              >Jelajahi Destinasi</a
-            >
+            <div class="lg:pl-10">
+              <a
+                href="#"
+                class="inline-block font-semibold mb-10 bg-cyan-600 px-5 py-3 rounded-full mt-5 text-white hover:bg-cyan-400 transition duration-500 shadow-sm shadow-slate-50"
+                >Jelajahi Destinasi</a
+              >
+            </div>
           </div>
           <!-- <div class="w-full self-center px-5 my-10 lg:w-1/2">
             <img
@@ -203,6 +287,58 @@
       </div>
     </section>
     <!-- Destinasi end -->
+
+    <!-- about start -->
+    <section id="about" class="pt-28 pb-16">
+      <div class="container">
+        <div class="w-full px-5">
+          <div class="max-w-xl mx-auto text-center mb-16">
+            <h4
+              class="font-semibold text-xl text-cyan-600"
+              data-aos="zoom-in"
+              data-aos-duration="500"
+            >
+              Tentang Lombok
+            </h4>
+            <h2
+              class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl text-slate-900"
+              data-aos="zoom-in"
+              data-aos-duration="500"
+            >
+              Menjelajahi Keindahan Pulau Lombok
+            </h2>
+            <p
+              class="font-medium text-md text-secondary md:text-lg text-slate-700"
+              data-aos="zoom-in"
+              data-aos-duration="500"
+            >
+              Temukan pesona sejati Indonesia di Lombok — pulau penuh keindahan dan ketenangan.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container mx-auto">
+        <div class="flex flex-wrap justify-center items-center">
+          <div class="w-full px-5 lg:px-10 lg:w-1/2">
+            <p class="lg:pl-10 text-slate-700 tracking-wide" data-aos="zoom-in"
+              data-aos-duration="500">
+              Lombok adalah pulau yang memikat dengan perpaduan keindahan alam dan budaya yang autentik. Dikelilingi pantai berpasir putih, air laut sebening kristal, serta pegunungan hijau yang menenangkan, setiap sudutnya menyuguhkan ketenangan bagi siapa pun yang datang. Tak hanya alamnya, keramahan masyarakat lokal dan kekayaan tradisi membuat pengalaman di Lombok terasa begitu dekat dan berkesan.
+            </p>
+          </div>
+          <div class="w-full px-5 lg:px-10 lg:w-1/2">
+            <div class="w-full self-center" data-aos="zoom-in"
+              data-aos-duration="500">
+              <img src="img/Lombok.png" alt="Lombok" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- about end -->
+
+    <!-- script -->
+    <script src="src/script.js"></script>
+    <!-- script -->
 
     <!-- js -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

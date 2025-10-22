@@ -2,10 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+/* body{
+  font-family: 'inter', sans-serif;
+} */
+
+.navbar-fixed{
+    @apply fixed z-[9999] bg-transparent bg-opacity-70 backdrop-blur-sm;
+    
+    box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.2);
+}
+
+
 #home {
   background-image: url("pantai.png");
   background-size: cover; /* menyesuaikan ukuran agar menutupi seluruh area */
   background-repeat: no-repeat; /* mencegah gambar diulang */
   background-position: center; /* memusatkan gambar */
   height: 100vh;
+}
+
+/* memindahkan class di html ke css */
+.hamburger-line{
+  @apply w-[30px] h-[2px] my-2 block bg-black;
+}
+
+.hamburger-active > span:nth-child(1){
+  @apply rotate-45
+}
+.hamburger-active > span:nth-child(2){
+  @apply scale-0
+}
+.hamburger-active > span:nth-child(3){
+  @apply -rotate-45
 }
