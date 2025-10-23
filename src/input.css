@@ -4,9 +4,9 @@
 
 
 
-/* body{
+body{
   font-family: 'inter', sans-serif;
-} */
+}
 
 .navbar-fixed{
     @apply fixed z-[9999] bg-transparent bg-opacity-70 backdrop-blur-sm;

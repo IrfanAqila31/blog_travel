@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,7 +20,7 @@
           <!-- ini elemen kiri -->
           <div class="px-5 lg:pl-14">
             <a href="#home" class="font-bold text-lg text-cyan-800 block py-6 lg:text-2xl"
-              >kellzTravel</a
+              >KellzTravel</a
             >
           </div>
           <!-- ini elemen kiri -->
@@ -49,28 +49,28 @@
                 <li class="group">
                   <a
                     href="#home"
-                    class="text-base text-dark py-2 mx-8 flex group-hover:text-cyan-600"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-cyan-800 transition duration-300"
                     >Home</a
                   >
                 </li>
                 <li class="group">
                   <a
-                    href="#about"
-                    class="text-base text-dark py-2 mx-8 flex group-hover:text-cyan-600"
+                    href="#destinasi"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-cyan-800 transition duration-300"
                     >Destinasi</a
                   >
                 </li>
                 <li class="group">
                   <a
-                    href="#portofolio"
-                    class="text-base text-dark py-2 mx-8 flex group-hover:text-cyan-600"
+                    href="#about"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-cyan-800 transition duration-300"
                     >Tentang</a
                   >
                 </li>
                 <li class="group">
                   <a
                     href="#clients"
-                    class="text-base text-dark py-2 mx-8 flex group-hover:text-cyan-600"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-cyan-800 transition duration-300"
                     >Testimoni</a
                   >
                 </li>
@@ -78,7 +78,7 @@
                 <li class="group">
                   <a
                     href="#contact"
-                    class="text-base text-dark py-2 mx-8 flex group-hover:text-cyan-600"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-cyan-800 transition duration-300"
                     >Contact</a
                   >
                 </li>
@@ -107,7 +107,7 @@
             <div class="lg:pl-10">
               <a
                 href="#"
-                class="inline-block font-semibold mb-10 bg-cyan-600 px-5 py-3 rounded-full mt-5 text-white hover:bg-cyan-400 transition duration-500 shadow-sm shadow-slate-50"
+                class="inline-block font-semibold mb-10 bg-cyan-600 px-5 py-3 rounded-full mt-5 text-white hover:bg-cyan-400 transition duration-500"
                 >Jelajahi Destinasi</a
               >
             </div>
@@ -125,7 +125,7 @@
     <!-- homepage end -->
 
     <!-- Destinasi start -->
-    <section id="#" class="pt-28 pb-16">
+    <section id="destinasi" class="pt-28 pb-16">
       <div class="container mx-auto">
         <div class="w-full px-5">
           <div class="max-w-xl mx-auto text-center mb-16">
@@ -161,11 +161,15 @@
             <img src="img/Tanjung Aan.jpg" alt="Pantai" class="rounded-t-lg" />
             <div class="py-6 px-4">
               <h3 class="font-semibold text-xl pb-2">Pantai Tanjung Aan</h3>
-              <p class="text-sm text-slate-700 sm:text-base md:text-base">
+              <p class="text-sm text-slate-700 sm:text-base md:text-base mb-2">
                 Pantai ini terkenal dengan pasirnya yang unik seperti butiran merica dan air lautnya
                 yang jernih. Tempat yang sempurna untuk bersantai dan menikmati keindahan alam
                 Lombok.
               </p>
+
+              <a href="blog.html" class="text-cyan-500 hover:text-cyan-700 transition duration-300"
+                >Lihat Selengkapnya →</a
+              >
             </div>
           </div>
           <div
@@ -290,7 +294,7 @@
 
     <!-- about start -->
     <section id="about" class="pt-28 pb-16">
-      <div class="container">
+      <div class="container mx-auto">
         <div class="w-full px-5">
           <div class="max-w-xl mx-auto text-center mb-16">
             <h4
@@ -320,15 +324,25 @@
       <div class="container mx-auto">
         <div class="flex flex-wrap justify-center items-center">
           <div class="w-full px-5 lg:px-10 lg:w-1/2">
-            <p class="lg:pl-10 text-slate-700 tracking-wide" data-aos="zoom-in"
-              data-aos-duration="500">
-              Lombok adalah pulau yang memikat dengan perpaduan keindahan alam dan budaya yang autentik. Dikelilingi pantai berpasir putih, air laut sebening kristal, serta pegunungan hijau yang menenangkan, setiap sudutnya menyuguhkan ketenangan bagi siapa pun yang datang. Tak hanya alamnya, keramahan masyarakat lokal dan kekayaan tradisi membuat pengalaman di Lombok terasa begitu dekat dan berkesan.
+            <p
+              class="text-justify lg:pl-10 text-slate-700 tracking-wide"
+              data-aos="zoom-in"
+              data-aos-duration="500"
+            >
+              Lombok adalah pulau yang memikat dengan perpaduan keindahan alam dan budaya yang
+              autentik. Dikelilingi pantai berpasir putih, air laut sebening kristal, serta
+              pegunungan hijau yang menenangkan, setiap sudutnya menyuguhkan ketenangan bagi siapa
+              pun yang datang. Tak hanya alamnya, keramahan masyarakat lokal dan kekayaan tradisi
+              membuat pengalaman di Lombok terasa begitu dekat dan berkesan.
             </p>
           </div>
-          <div class="w-full px-5 lg:px-10 lg:w-1/2">
-            <div class="w-full self-center" data-aos="zoom-in"
-              data-aos-duration="500">
-              <img src="img/Lombok.png" alt="Lombok" />
+          <div class="w-full px-5 lg:px-10 lg:w-1/2 mt-3 lg:mt-0">
+            <div class="w-full self-center" data-aos="zoom-in" data-aos-duration="500">
+              <img
+                src="img/ChatGPT Image 23 Okt 2025, 09.34.18.png"
+                alt="Lombok"
+                class="w-full transform scale-125"
+              />
             </div>
           </div>
         </div>
